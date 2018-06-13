@@ -1,5 +1,5 @@
 const $ = require("jquery")
-
+ 
 const userManager = Object.create(null, {
 
     // get all users

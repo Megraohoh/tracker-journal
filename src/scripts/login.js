@@ -41,7 +41,6 @@ const loginComponent = function() {
                 console.log("current user", user)
                 if(user.password === loginPassword.value && user.email === loginEmail.value) {
                     userAuthenticated = true;
-                    console.log(userAuthenticated)
                     $("#login").hide();
                     // $("#main").show();
                     session.saveActiveUser(user);
