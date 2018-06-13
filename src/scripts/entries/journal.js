@@ -2,6 +2,7 @@
 //Will need timestamp, input grab, db submission, hide text feature, save button 
 const $ = require("jquery")
 const entryManager = require("../../apiManager/entriesApiManager")
+const activeUser = require("../../apiManager/activeUserApiManager")
 
 const journalComponent = function() {
     const journalEl = $("#journal")
@@ -29,17 +30,24 @@ const journalComponent = function() {
 
     //Event listener on save
     journalSaveBtn.onclick = function(){
+        //capture input from textarea to compare to entries input
+        let journalInput = $("#journalText").val()
+
         //get all entries from API
         entryManager.getAllEntries().then(allentries => {
-            let entryAuthenticated = false;
+            let entryAuthenticated = true;
             allentries.forEach(entry => {
-                console.log("current entries", entry)
-                if(entry.length !== 0){
-                    entryAuthenticated = true
+                if(journalInput === entry.input){
+                    entryAuthenticated = false;
                 }
             })
-            if (!entryAuthenticated) {
-                alert("There needs to be a little bit more to the journal before this will save. Type it out. Or whatever.")
+            if (entryAuthenticated) {
+                let userId = activeUser.getActiveUser("ActiveUser")
+                entryManager.createEntry({
+                    "userID": JSON.parse(userId.id),
+                    "entryTypeId": 2,
+                    "input": journalInput
+                });
             }
         })
     }

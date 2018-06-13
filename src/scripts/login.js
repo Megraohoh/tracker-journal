@@ -38,7 +38,6 @@ const loginComponent = function() {
         userManager.getAllusers().then(allusers => {
             let userAuthenticated = false;
             allusers.forEach(user => {
-                console.log("current user", user)
                 if(user.password === loginPassword.value && user.email === loginEmail.value) {
                     userAuthenticated = true;
                     $("#login").hide();
