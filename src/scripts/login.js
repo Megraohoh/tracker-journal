@@ -44,7 +44,7 @@ const loginComponent = function() {
                     // $("#main").show();
                     session.saveActiveUser(user);
                 }
-            })
+            }) 
             if (!userAuthenticated) {
                 alert("Email or Password did not match a known user. Care to try again?");
             }

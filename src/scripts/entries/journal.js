@@ -42,6 +42,7 @@ const journalComponent = function() {
                 }
             })
             if (entryAuthenticated) {
+                $("#journalText").val("").blur();
                 let userId = activeUser.getActiveUser("ActiveUser")
                 entryManager.createEntry({
                     "userID": JSON.parse(userId.id),
