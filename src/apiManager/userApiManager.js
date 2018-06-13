@@ -15,7 +15,7 @@ const userManager = Object.create(null, {
         }
     },
     // post (create) user
-    createusers: {
+    createUsers: {
         value: function (Users) {
             return $.ajax({
                 url: "http://localhost:8088/users",

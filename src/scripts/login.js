@@ -1,6 +1,6 @@
 //Purpose: Login option for landing page
 const $ = require("jquery")
-const session = require("../apiManager/activeUserApiManager");
+const session = require("../apiManager/activeUserApiManager")
 const userManager = require("../apiManager/userApiManager")
 
 const loginComponent = function() {
@@ -53,4 +53,5 @@ const loginComponent = function() {
         })
     }
 }
+
 module.exports = loginComponent
