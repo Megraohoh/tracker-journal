@@ -1,46 +1,56 @@
+//Purpose: Login option for landing page
 const $ = require("jquery")
+const session = require("../apiManager/activeUserApiManager");
+const userManager = require("../apiManager/userApiManager")
 
 const loginComponent = function() {
-const loginEl = $("#login")
+    const loginEl = $("#login")
 
-//section creation and attach to html doc
-const loginSection = document.createElement("section")
-loginSection.setAttribute("id", "login")
-loginEl.append(loginSection)
+    //section creation and attach to html doc
+    const loginSection = document.createElement("section")
+    loginSection.setAttribute("id", "login")
+    loginEl.append(loginSection)
 
-// //username input
-// const loginUserName = document.createElement("input")
-// loginUserName.id = "loginUserName"
-// loginUserName.type = "text"
-// loginUserName.placeholder = "Name"
-// loginSection.append(loginUserName)
+    //user email
+    const loginEmail = document.createElement("input")
+    loginEmail.id = "loginEmail"
+    loginEmail.type = "text"
+    loginEmail.placeholder = "Email"
+    loginSection.append(loginEmail)
 
-//user email
-const loginEmail = document.createElement("input")
-loginEmail.id = "loginEmail"
-loginEmail.type = "text"
-loginEmail.placeholder = "Email"
-loginSection.append(loginEmail)
+    //user password
+    const loginPassword = document.createElement("input")
+    loginPassword.id = "loginPassword"
+    loginPassword.type = "password"
+    loginPassword.placeholder = "Password"
+    loginSection.append(loginPassword)
 
-//user password
-const loginPassword = document.createElement("input")
-loginPassword.id = "loginPassword"
-loginPassword.type = "password"
-loginPassword.placeholder = "Password"
-loginSection.append(loginPassword)
+    //submit button
+    const loginBtn = document.createElement("button")
+    loginBtn.id = "loginBtn"
+    loginBtn.type = "button"
+    loginBtn.textContent = "Log In"
+    loginSection.append(loginBtn)
 
-//submit button
-const loginBtn = document.createElement("button")
-loginBtn.type = "button"
-loginBtn.textContent = "Log In"
-loginSection.append(loginBtn)
-
-//event listener
-loginBtn.onclick = function () {
-    //Get all users from API
-    
+    //event listener
+    loginBtn.onclick = function() { 
+        //Get all users from API
+        userManager.getAllusers().then(allusers => {
+            let userAuthenticated = false;
+            allusers.forEach(user => {
+                console.log("current user", user)
+                if(user.password === loginPassword.value && user.email === loginEmail.value) {
+                    userAuthenticated = true;
+                    console.log(userAuthenticated)
+                    $("#login").hide();
+                    // $("#main").show();
+                    session.saveActiveUser(user);
+                }
+            })
+            if (!userAuthenticated) {
+                alert("Email or Password did not match a known user. Care to try again?");
+            }
+        })
+    }
 }
-
-}
-
 module.exports = loginComponent

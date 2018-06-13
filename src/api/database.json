@@ -3,32 +3,32 @@
         {
           "id": 1,
           "name": "Pate Adkins",
-          "email": "no@no.com",
-          "password": 12345
+          "email": "no1@no.com",
+          "password": "12345"
         },
         {
           "id": 2,
           "name": "Geneva Guy",
-          "email": "no@no.com",
-          "password": 12345
+          "email": "no2@no.com",
+          "password": "12345"
         },
         {
           "id": 3,
           "name": "Grimes Dawson",
-          "email": "no@no.com",
-          "password": 12345
+          "email": "no3@no.com",
+          "password": "12345"
         },
         {
           "id": 4,
           "name": "Deirdre Whitley",
-          "email": "no@no.com",
-          "password": 12345
+          "email": "no4@no.com",
+          "password": "12345"
         },
         {
           "id": 5,
           "name": "Lourdes Estrada",
-          "email": "no@no.com",
-          "password": 12345
+          "email": "no5@no.com",
+          "password": "12345"
         }
       ],
       "entries": [

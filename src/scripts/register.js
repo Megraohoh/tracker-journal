@@ -1,3 +1,4 @@
+//Purpose: To provide a register user option on landing page
 const $ = require("jquery")
 
 const registerComponent = function() {
