@@ -1,5 +1,5 @@
 //Purpose: Display the list entry field
-//Will need timestamp, input grab, input styling, db submission, hide text feature, save button 
+//Will need hide text feature
 const $ = require("jquery")
 const entryManager = require("../../apiManager/entriesApiManager")
 const activeUser = require("../../apiManager/activeUserApiManager")
@@ -20,9 +20,8 @@ const listComponent = function() {
     listText.cols = "10"
     listText.placeholder = "List out the things you're feeling."
     listSection.append(listText)
-
-  //get value of indiv word
-  //set class
+ 
+  //get value of individual word and set first class
 $("#listText").keyup(function(e){
     if(e.keyCode === 32) {
         $("#listText").css("background-color", "pink")
@@ -30,8 +29,6 @@ $("#listText").keyup(function(e){
         wordDiv = document.createElement("div")
         wordDiv.value = words
         wordDiv.setAttribute("class", "starter")
-        console.log(words)
-
     }
 })
 
