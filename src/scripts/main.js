@@ -5,7 +5,7 @@ const listComponent = require("./entries/list")
 const emoteComponent = require("./entries/emote")
 
 
-emoteComponent
+emoteComponent()
 listComponent()
 journalComponent()
 loginComponent()

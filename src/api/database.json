@@ -37,6 +37,13 @@
       "userId": 5,
       "entryTypeId": 2,
       "input": "In in nulla cillum sint do ad magna. Ut sunt reprehenderit id in nulla do sunt quis sit incididunt duis nisi non."
+    },
+    {
+      "userID": "1",
+      "entryTypeId": "2",
+      "input": "a;lskdfoasidf ;dsfiahsd",
+      "timestamp": "1529012561367",
+      "id": 2
     }
   ],
   "entrytype": [

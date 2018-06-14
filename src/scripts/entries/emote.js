@@ -1,8 +1,8 @@
 //Purpose: Display the emote entry field
 const $ = require("jquery")
 const emojisList = require("emojis-list")
-const entryManager = require("../../apiManager/entriesApiManager")
-const activeUser = require("../../apiManager/activeUserApiManager")
+// const entryManager = require("../../apiManager/entriesApiManager")
+// const activeUser = require("../../apiManager/activeUserApiManager")
 
 //Emote function
 const emoteComponent = function() {
@@ -12,20 +12,21 @@ const emoteComponent = function() {
     emoteSection.setAttribute("id", "emoteSection")
     emoteSection.setAttribute("class", "entrySection")
     emoteEl.append(emoteSection)
-
+    
     //"radio button" functionality
-//label>input>img src (emojisList[343])
+    //label>input>img src (emojisList[343])
     const emoteLabelLove = document.createElement("label")
     emoteLabelLove.class = "emoteLabel"
     
     const emoteInputLove = document.createElement("input")
-    emoteInput.id = ""
-    emoteInput.type = "radio"
-    emoteInput.name = "emoji"
-    emoteInput.value = "med"
-
+    emoteInputLove.id = "heartLove"
+    emoteInputLove.type = "radio"
+    emoteInputLove.name = "emoji"
+    emoteInputLove.value = "med"
+    
     const emoteImgLove = document.createElement("img")
-    emoteImg.src = ""
+    emoteImgLove.src = emojisList[1348]
+    console.log(emojisList[1348])
 
     emoteLabelLove.append(emoteInputLove)
     emoteLabelLove.append(emoteImgLove)
@@ -51,6 +52,11 @@ const emoteComponent = function() {
 
 
     //Save button
+        const emoteSaveBtn = document.createElement("button")
+        emoteSaveBtn.id = "emoteSaveBtn"
+        emoteSaveBtn.type = "button"
+        emoteSaveBtn.textContent ="Save"
+        emoteSection.append(emoteSaveBtn)
     //Event handler to update DB
 
 }
