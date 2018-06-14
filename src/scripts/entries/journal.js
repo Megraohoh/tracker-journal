@@ -1,5 +1,5 @@
-//Purpose: Display the written journal entry field
-//Will need timestamp, input grab, db submission, hide text feature, save button 
+//Purpose: Display the journal entry field
+//Will need hide text feature
 const $ = require("jquery")
 const entryManager = require("../../apiManager/entriesApiManager")
 const activeUser = require("../../apiManager/activeUserApiManager")
