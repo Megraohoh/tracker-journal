@@ -16,11 +16,25 @@ const listComponent = function() {
     const listText = document.createElement("textarea")
     listText.id = "listText"
     listText.name = "listInput"
-    // listText.attributes.required = ""
     listText.rows = "10"
     listText.cols = "10"
     listText.placeholder = "List out the things you're feeling."
     listSection.append(listText)
+
+  //get value of indiv word
+  //set class
+$("#listText").keyup(function(e){
+    if(e.keyCode === 32) {
+        $("#listText").css("background-color", "pink")
+        var words = $(this).val().split(" ");
+        wordDiv = document.createElement("div")
+        wordDiv.value = words
+        wordDiv.setAttribute("class", "starter")
+        console.log(words)
+
+    }
+})
+
 
     //List save button
     const listSaveBtn = document.createElement("button")
@@ -30,9 +44,8 @@ const listComponent = function() {
     listSection.append(listSaveBtn)
 
     //Event listener on save
-    // if (e.charCode === 32) {} <--on this event, trigger class change 
-listSaveBtn.onclick = function(e){
-    //capture the input
+    listSaveBtn.onclick = function(e){
+        //capture the input
     let listInput = $("#listText").val()  
     //reset the input field to default
     $("#listText").val("").blur();
