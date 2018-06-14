@@ -34,16 +34,16 @@ const listComponent = function() {
 listSaveBtn.onclick = function(e){
     //capture the input
     let listInput = $("#listText").val()  
-                let userId = activeUser.getActiveUser("ActiveUser")
-                entryManager.createEntry({
-                    "userId": JSON.parse(userId.id),
-                    "entryTypeId": 1,
-                    "input": listInput,
-                    "timestamp": Date.now()
-                })
-                $("#listInput").val("").blur();
-            
-        
+    //reset the input field to default
+    $("#listText").val("").blur();
+    //call API manager
+    let userId = activeUser.getActiveUser("ActiveUser")
+        entryManager.createEntry({
+            "userId": JSON.parse(userId.id),
+            "entryTypeId": 1,
+            "input": listInput,
+            "timestamp": Date.now()
+        })  
     }
 }   
 
