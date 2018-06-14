@@ -16,7 +16,7 @@ const listComponent = function() {
     const listText = document.createElement("textarea")
     listText.id = "listText"
     listText.name = "listInput"
-    listText.attributes.required = ""
+    // listText.attributes.required = ""
     listText.rows = "10"
     listText.cols = "10"
     listText.placeholder = "List out the things you're feeling."
@@ -31,30 +31,20 @@ const listComponent = function() {
 
     //Event listener on save
     // if (e.charCode === 32) {} <--on this event, trigger class change 
-listSaveBtn.onclick = function(){
+listSaveBtn.onclick = function(e){
     //capture the input
-    let listInput = $("#listText").val()
-
-    entryManager.getAllEntries().then(allentries => {
-        allentries.forEach(entry => {
-            
-            // if(! listInput.valid()) { 
-            //     return false;
-            // } else {
-                $("#listInput").val("").blur();
+    let listInput = $("#listText").val()  
                 let userId = activeUser.getActiveUser("ActiveUser")
                 entryManager.createEntry({
-                    "userID": JSON.parse(userId.id),
+                    "userId": JSON.parse(userId.id),
                     "entryTypeId": 1,
                     "input": listInput,
                     "timestamp": Date.now()
                 })
-            // }
-        })
-    })
-}
-    
-} 
-
+                $("#listInput").val("").blur();
+            
+        
+    }
+}   
 
 module.exports = listComponent

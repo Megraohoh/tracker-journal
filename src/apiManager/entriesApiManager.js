@@ -16,7 +16,6 @@ const entryManager = Object.create(null, {
     //post entry to database
     createEntry: {
         value: function(entry){
-            console.log(entry)
             return $.ajax({
                 url: "http://localhost:8088/entries",
                 method: "POST",
