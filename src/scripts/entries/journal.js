@@ -47,7 +47,8 @@ const journalComponent = function() {
                 entryManager.createEntry({
                     "userID": JSON.parse(userId.id),
                     "entryTypeId": 2,
-                    "input": journalInput
+                    "input": journalInput,
+                    "timestamp": Date.now()
                 });
             }
         })

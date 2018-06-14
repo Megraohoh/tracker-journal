@@ -71,7 +71,8 @@
     {
       "userID": "1",
       "entryTypeId": "2",
-      "input": "asd",
+      "input": "asdf",
+      "timestamp": "1528989459810",
       "id": 2
     }
   ],
