@@ -11,5 +11,5 @@ const picker = new EmojiPicker.default({
         selectedEmoji.style.display = "inline";
     }
 });
-
+ 
 module.exports = picker 

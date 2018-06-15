@@ -6,7 +6,7 @@ const emoteComponent = require("./entries/emote")
 const picker = require("./entries/picker")
 const logoutComponent = require("./logout")
 
-// console.log(picker)
+console.log(picker)
 emoteComponent()
 listComponent()
 journalComponent()
