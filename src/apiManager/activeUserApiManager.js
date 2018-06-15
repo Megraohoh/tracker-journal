@@ -29,7 +29,7 @@ const activeUser = Object.create(null, {
             sessionStorage.removeItem("ActiveUser")
         }
     }
-
+ 
 })
 
 module.exports = activeUser

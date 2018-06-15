@@ -28,7 +28,6 @@ const container = document.getElementById("container");
 const editable  = document.getElementById("my-input");
 
 picker.listenOn(icon, container, editable);
-console.log("called")
 
 }
 
