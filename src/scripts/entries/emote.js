@@ -5,27 +5,23 @@ const picker = require("./picker")
 //Next tell it where to listen for a click, the container it should be appended to, and the input/textarea/contenteditable it needs to work with
 const emoteComponent = function() {
     const emoteEl = $("#emote")
+    
+    const containerSection = document.createElement("section")
+    containerSection.id = "container"
+    emoteEl.append(containerSection)
 
-const emoteDiv = document.createElement("div")
-emoteDiv.id = "emoteDiv"
-emoteEl.append(emoteDiv)
+    const iconBtn = document.createElement("button")
+    iconBtn.id = "my-icon"
+    iconBtn.textContent = "Show Emojis"
+    containerSection.append(iconBtn)
 
-const iconP = document.createElement("button")
-iconP.id = "my-icon"
-iconP.textContent = "click"
-emoteDiv.append(iconP)
+    const editableTextarea = document.createElement("textarea")
+    editableTextarea.id = "my-input"
+    containerSection.append(editableTextarea)
 
-const containerS = document.createElement("section")
-containerS.id = "container"
-emoteDiv.append(containerS)
-
-const editableT = document.createElement("textarea")
-editableT.id = "my-input"
-emoteDiv.append(editableT)
-
-const icon      = document.getElementById("my-icon");
-const container = document.getElementById("container");
-const editable  = document.getElementById("my-input");
+    const icon = document.getElementById("my-icon");
+    const container = document.getElementById("container");
+    const editable = document.getElementById("my-input");
 
 picker.listenOn(icon, container, editable);
 

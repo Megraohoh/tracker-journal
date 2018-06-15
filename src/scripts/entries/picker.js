@@ -1,6 +1,6 @@
 const $ = require("jquery")
 const EmojiPicker = require("rm-emoji-picker");
-
+ 
 const picker = new EmojiPicker.default({
     show_colon_preview: false,
     positioning: "vertical",
