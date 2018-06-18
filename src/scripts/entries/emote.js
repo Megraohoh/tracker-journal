@@ -5,8 +5,11 @@ const $ = require("jquery")
 const emoteComponent = function() {
     $("#smileys input").on("click", function() {
         $("#result").html($(this).val());
+
+        //onclick update "checked" for the smileys
     });
 }
+emoteComponent()
 
 // //Next tell it where to listen for a click, the container it should be appended to, and the input/textarea/contenteditable it needs to work with
 // const emoteComponent = function() {
