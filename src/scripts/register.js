@@ -8,7 +8,7 @@ const registerComponent = function() {
 
     //section creation and attach to html doc
     const registerSection = document.createElement("section")
-    registerSection.setAttribute("id", "login")
+    registerSection.setAttribute("id", "register")
     registerEl.append(registerSection)
 
     // //username input
@@ -56,6 +56,11 @@ const registerComponent = function() {
                 })
                 newRequest.done(function(msg) {
                     $("#register").hide();
+                    $("#registerUserName").val("");
+                    $("#registerEmail").val("");
+                    $("#registerPassword").val("");
+                    console.log("value is zero")
+                    $("#login").hide();
                     session.saveActiveUser(validUser);
                 })
             }

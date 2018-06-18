@@ -40,8 +40,11 @@ const loginComponent = function() {
             allusers.forEach(user => {
                 if(user.password === loginPassword.value && user.email === loginEmail.value) {
                     userAuthenticated = true;
-                    $("#login").hide();//show main components
-                    // $("#mainView").show();
+                    $("#login").hide();
+                    $("#loginEmail").val("")
+                    $("#loginPassword").val("")
+                    $("#register").hide();
+                  
                     session.saveActiveUser(user);
                 }
             }) 
