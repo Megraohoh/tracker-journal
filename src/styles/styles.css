@@ -42,11 +42,16 @@
     background-size: cover;
     opacity: 1;
   }
+  form#smileys input[type="radio"].happy + span:before, form#smileys input[type="radio"].neutral + span::before, form#smileys input[type="radio"].sad + span:before {
+    visibility: hidden;
+    
+  }
   form#smileys input[type="radio"].neutral + span {
     background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/neutral_t3q8hz.svg') center;
     background-size: cover;
     opacity: 1;
   }
+
   form#smileys input[type="radio"].sad + span {
     background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/sad_bj1tuj.svg') center;
     background-size: cover;

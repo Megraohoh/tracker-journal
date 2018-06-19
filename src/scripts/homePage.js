@@ -9,7 +9,6 @@ const logoutComponent = require("./logout")
 //if there is an active user, show home page (list, journal, emote)
 
 const homePage = function () {
-    console.log(sessionStorage.length)
     // const homePageEl = $("#home-page")
     // let active = activeUser.getActiveUser("ActiveUser")
     if (sessionStorage.length !== 0) {
