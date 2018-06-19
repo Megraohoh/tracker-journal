@@ -52,20 +52,6 @@
     background-size: cover;
     opacity: 1;
   }
-  .mtt {
-    position: fixed;
-    bottom: 10px;
-    right: 20px;
-    color: #999;
-    text-decoration: none;
-  }
-  .mtt span {
-    color: #e74c3c;
-  }
-  .mtt:hover {
-    color: #666;
-  }
-  .mtt:hover span {
-    color: #c0392b;
-  }
+
+
   
