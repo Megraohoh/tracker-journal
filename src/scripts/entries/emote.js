@@ -3,13 +3,15 @@ const $ = require("jquery")
 // const picker = require("./picker")
 
 const emoteComponent = function() {
-    $("#smileys input").on("click", function() {
-        $("#result").html($(this).val());
+
+    $("#smileys").on("click", function(e) {
+        $("#result").html(e.target.parentElement.firstElementChild.value);
 
         //onclick update "checked" for the smileys
     });
-}
-emoteComponent()
+
+} 
+
 
 // //Next tell it where to listen for a click, the container it should be appended to, and the input/textarea/contenteditable it needs to work with
 // const emoteComponent = function() {
