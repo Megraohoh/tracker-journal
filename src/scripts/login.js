@@ -2,6 +2,7 @@
 const $ = require("jquery")
 const session = require("../apiManager/activeUserApiManager")
 const userManager = require("../apiManager/userApiManager")
+const refreshPage = require("./refresh")
 
 const loginComponent = function() {
     const loginEl = $("#login")
@@ -32,6 +33,7 @@ const loginComponent = function() {
     loginBtn.textContent = "Log In"
     loginSection.append(loginBtn)
 
+ 
     //event listener
     loginBtn.onclick = function() { 
         //Get all users from API
@@ -40,11 +42,11 @@ const loginComponent = function() {
             allusers.forEach(user => {
                 if(user.password === loginPassword.value && user.email === loginEmail.value) {
                     userAuthenticated = true;
-                    $("#login").hide();
+                    // $("#login").hide();
                     $("#loginEmail").val("")
                     $("#loginPassword").val("")
-                    $("#register").hide();
-                  
+                    // $("#register").hide();
+                  refreshPage()
                     session.saveActiveUser(user);
                 }
             }) 

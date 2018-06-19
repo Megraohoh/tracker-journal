@@ -18,7 +18,7 @@ const homePage = function () {
         $(".container").show()
         $("#login").hide()
         $("#register").hide()
-
+        
     } else {
         (sessionStorage.length === 0)
         $("#login").show();
@@ -26,7 +26,7 @@ const homePage = function () {
         $("#list").hide()
         $("#journal").hide()
         $(".container").hide()
-
+    
     }
 }
 
