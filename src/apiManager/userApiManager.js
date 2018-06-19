@@ -39,7 +39,7 @@ const userManager = Object.create(null, {
             return $.ajax({
                 url: `http://localhost:8088/users/${Users.id}`,
                 method: "PUT",
-                data:Users
+                data: Users
             })
         }
     }

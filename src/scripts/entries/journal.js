@@ -3,7 +3,7 @@
 const $ = require("jquery")
 const entryManager = require("../../apiManager/entriesApiManager")
 const activeUser = require("../../apiManager/activeUserApiManager")
-
+ 
 const journalComponent = function() {
     const journalEl = $("#journal")
     //Journal section
@@ -13,8 +13,9 @@ const journalComponent = function() {
     journalEl.append(journalSection)
 
     //Journal input field
-    const journalText = document.createElement("textarea")
+    const journalText = document.createElement("input")
     journalText.id = "journalText"
+    journalText.type = "text"
     journalText.name = "journalInput"
     journalText.rows = "10"
     journalText.cols = "10"

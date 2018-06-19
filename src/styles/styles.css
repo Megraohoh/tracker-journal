@@ -11,6 +11,7 @@
     margin-top: 15px;
     text-align: center; */
   /* } */
+
   .smiley-container {
     margin-top: 50px;
   }
@@ -51,6 +52,7 @@
   form#smileys input[type="radio"].neutral + span {
     background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/neutral_t3q8hz.svg') center;
     background-size: cover;
+
     height: 100px;
     width: 100px;
     opacity: 1;
@@ -59,6 +61,7 @@
   form#smileys input[type="radio"].sad + span {
     background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/sad_bj1tuj.svg') center;
     background-size: cover;
+  
     height: 100px;
     width: 100px;
     opacity: 1;

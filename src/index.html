@@ -13,13 +13,13 @@
   <!--Import materialize.css-->
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tracker Journal</title>
+  <title>Journal</title>
 </head>
- 
+
 <body>
   <nav>
     <div class="nav-wrapper" "navbar-fixed">
-      <a href="#" class="brand-logo">HealthMe</a>
+      <a href="#" class="brand-logo">HealthMe Journal</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li>
           <a href="#">Home</a>
@@ -29,21 +29,46 @@
         </li>
         <li>
           <a href="#">Charts</a>
-        </li>
-        <li>
-          <a href="#">Settings</a>
         </li> -->
+        <li>
+          <!-- <a id="settings">Settings</a> -->
+          <!-- Modal Trigger -->
+          <button data-target="modal1" class="btn modal-trigger" id="settings">Settings</button>
+        </li>
         <li>
           <a id="logout">Logout</a>
         </li>
       </ul>
     </div>
   </nav>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Settings</h4>
+      <p>Hiding text can allow you to write without editing your own story. Just write, put your thoughts in type. When you're
+        ready to view your entry, the text will be available in the 'Entries' option in the navbar.</p>
+    </div>
+    <div class="modal-footer">
+      <!-- Switch -->
+      <div class="switch">
+        <label>
+          Off
+          <input type="checkbox">
+          <span class="lever"></span>
+          On
+        </label>
+      </div>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
   <!-- on login target div  for entries and forms-->
   <article id="login"></article>
   <article id="register"></article>
 
   <article id="home-page"></article>
+  <div id="journals-container">
+      <div class="row">
+      <div class="col s4">
   <div class="container smiley-container">
     <form action="#" id="smileys">
       <div class="row">
@@ -70,10 +95,12 @@
         </div>
       </div>
     </form>
-  </div>
-  <article id="list"></article>
-  <article id="journal"></article>
-
+  </div></div>
+  <div class="col s4">
+  <article id="list"></article></div>
+  <div class="col s4">
+  <article id="journal"></article></div>
+</div></div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <!-- <script type="text/javascript" src="./materialize/js/materialize.min.js"></script> -->

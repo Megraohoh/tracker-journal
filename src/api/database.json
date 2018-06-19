@@ -4,7 +4,10 @@
       "id": 1,
       "name": "Pate Adkins",
       "email": "1",
-      "password": "1"
+      "password": "1",
+      "settings": {
+        "hideText": true
+      }
     },
     {
       "id": 2,
@@ -33,6 +36,13 @@
       "input": "",
       "timestamp": "1529424336753",
       "id": 3
+    },
+    {
+      "userID": "1",
+      "entryTypeId": "2",
+      "input": "aksjdhfkasdjbfsadf",
+      "timestamp": "1529437055235",
+      "id": 4
     }
   ],
   "entrytype": [
