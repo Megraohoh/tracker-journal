@@ -26,6 +26,13 @@
       "input": "a;lskdfoasidf ;dsfiahsd",
       "timestamp": "1529012561367",
       "id": 2
+    },
+    {
+      "userId": "1",
+      "entryTypeId": "3",
+      "input": "",
+      "timestamp": "1529424336753",
+      "id": 3
     }
   ],
   "entrytype": [

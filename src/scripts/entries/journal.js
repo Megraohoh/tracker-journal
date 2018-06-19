@@ -32,7 +32,7 @@ const journalComponent = function() {
     journalSaveBtn.onclick = function(){
         //capture input from textarea to compare to entries input
         let journalInput = $("#journalText").val()
-
+ 
         //get all entries from API
         entryManager.getAllEntries().then(allentries => {
             let entryAuthenticated = true;

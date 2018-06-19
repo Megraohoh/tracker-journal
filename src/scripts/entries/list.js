@@ -43,7 +43,7 @@ $("#listText").keyup(function(e){
     //Event listener on save
     listSaveBtn.onclick = function(e){
         //capture the input
-    let listInput = $("#listText").val()  
+    let listInput = $("#listText").val()    
     //reset the input field to default
     $("#listText").val("").blur();
     //call API manager
