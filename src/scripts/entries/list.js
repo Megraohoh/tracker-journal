@@ -13,8 +13,9 @@ const listComponent = function() {
     listEl.append(listSection)
 
     //List input field
-    const listText = document.createElement("textarea")
+    const listText = document.createElement("input")
     listText.id = "listText"
+    listText.type = "text"
     listText.name = "listInput"
     listText.rows = "10"
     listText.cols = "10"
