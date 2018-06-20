@@ -5,7 +5,6 @@ const homePage = require("./homePage")
 const homeNavBtn = function () {
     $("#home").click(function(e){
         homePage()
-        console.log("home clicked")
     })
 }
 

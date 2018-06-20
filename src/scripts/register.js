@@ -59,7 +59,6 @@ const registerComponent = function() {
                     $("#registerUserName").val("");
                     $("#registerEmail").val("");
                     $("#registerPassword").val("");
-                    console.log("value is zero")
                     $("#login").hide();
                     session.saveActiveUser(validUser);
                 })

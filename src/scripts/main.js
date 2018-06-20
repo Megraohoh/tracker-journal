@@ -8,7 +8,7 @@ const logoutComponent = require("./logout")
 
 
 
- console.log("fingers crossed")
+ console.log("puke")
 
 
  

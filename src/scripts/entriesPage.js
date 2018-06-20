@@ -6,7 +6,8 @@ const entriesPageComponent = function () {
     let entriesAnchor = $("#entriesPage")
     entriesAnchor.hide()
     $("#entries").click(function (e) {
-
+        entriesAnchor.empty()
+        
         const rowDiv = document.createElement("div")
         rowDiv.setAttribute("class", "row")
         entriesAnchor.append(rowDiv)
