@@ -2,12 +2,9 @@
   "users": [
     {
       "id": 1,
-      "name": "Pate Adkins",
       "email": "1",
       "password": "1",
-      "settings": {
-        "hideText": true
-      }
+      "settings[hideText]": "true"
     },
     {
       "id": 2,
