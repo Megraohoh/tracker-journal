@@ -25,7 +25,11 @@ const cardComponent = function(e) {
     cardContentDiv.append(cardSpan)
 
     const cardParagraph = document.createElement("p")
-    cardParagraph.innerText = new Date(JSON.parse(e.timestamp))
+    cardParagraph.innerText = e.input
     cardContentDiv.append(cardParagraph)
+
+    const cardheader = document.createElement("h6")
+    cardheader.setAttribute("class", "card-title")
+    cardheader.innerText = new Date(JSON.parse(e.timestamp));    cardContentDiv.append(cardheader);
 }
 module.exports = cardComponent

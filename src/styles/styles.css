@@ -11,7 +11,12 @@
     margin-top: 15px;
     text-align: center; */
   /* } */
-
+h6.card-title {
+  font-size: 1em !important;
+}
+span.card-title {
+  font-variant: small-caps slashed-zero !important; 
+}
   .smiley-container {
     margin-top: 50px;
   }

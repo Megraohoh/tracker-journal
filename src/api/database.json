@@ -26,7 +26,42 @@
       "input": "this shit is real",
       "timestamp": "1529504393619",
       "id": 5
-    } 
+    },
+    {
+      "id": 1,
+      "userId": 4,
+      "entryTypeId": 1,
+      "input": "Ad nostrud quis pariatur deserunt ex. Ex officia id tempor duis voluptate in commodo.",
+      "timestamp": "1529504393889"
+    },
+    {
+      "id": 2,
+      "userId": 5,
+      "entryTypeId": 2,
+      "input": "Duis qui commodo quis voluptate enim aliquip. Reprehenderit commodo ea sunt enim cillum elit excepteur velit Lorem tempor quis excepteur laborum.",
+      "timestamp": "1529567393619"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "entryTypeId": 1,
+      "input": "Irure culpa cillum culpa sint culpa aute irure ad aliqua incididunt amet. Aute officia ut laboris minim exercitation voluptate consectetur ullamco magna sint cillum consequat.",
+      "timestamp": "1529504444619"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "entryTypeId": 3,
+      "input": "Officia dolor veniam velit aliquip labore excepteur nisi irure Lorem ipsum mollit excepteur enim Lorem. Nostrud dolore aute dolore exercitation voluptate.",
+      "timestamp": "152953393619"
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "entryTypeId": 2,
+      "input": "Nisi ullamco voluptate Lorem magna ea deserunt. Aliquip duis aliquip irure dolore Lorem consectetur commodo do mollit excepteur qui ad nisi.",
+      "timestamp": "1529544393619"
+    }
   ],
   "entryTypes": [
     {

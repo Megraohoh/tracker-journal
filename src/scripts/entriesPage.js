@@ -15,8 +15,6 @@ const entriesPageComponent = function () {
         let userEntries = entryManager.getAllEntriesFromSingleUser(user.id).then(entry => {
             entry.forEach(e => {
                 const time = new Date(JSON.parse(e.timestamp))
-
-                console.log(time)
                 cardComponent(e)
             })
         })
