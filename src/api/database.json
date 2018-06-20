@@ -3,14 +3,20 @@
     {
       "id": 1,
       "email": "1",
-      "password": "1",
-      "settings[hideText]": "true"
+      "password": "1"
     },
     {
       "id": 2,
       "name": "Meghan",
       "email": "no2@no.com",
       "password": "12345"
+    }
+  ],
+  "settings": [
+    {
+      "id": 1,
+      "userId": "1",
+      "hideText": "false"
     }
   ],
   "entries": [
