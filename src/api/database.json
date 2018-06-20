@@ -18,31 +18,11 @@
   ],
   "entries": [
     {
-      "id": 1,
-      "userId": 5,
-      "entryTypeId": 2,
-      "input": "In in nulla cillum sint do ad magna. Ut sunt reprehenderit id in nulla do sunt quis sit incididunt duis nisi non."
-    },
-    {
       "userID": "1",
       "entryTypeId": "2",
-      "input": "a;lskdfoasidf ;dsfiahsd",
-      "timestamp": "1529012561367",
-      "id": 2
-    },
-    {
-      "userId": "1",
-      "entryTypeId": "3",
-      "input": "",
-      "timestamp": "1529424336753",
-      "id": 3
-    },
-    {
-      "userID": "1",
-      "entryTypeId": "2",
-      "input": "aksjdhfkasdjbfsadf",
-      "timestamp": "1529437055235",
-      "id": 4
+      "input": "this shit is real",
+      "timestamp": "1529504393619",
+      "id": 5
     }
   ],
   "entrytype": [

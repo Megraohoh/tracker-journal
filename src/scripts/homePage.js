@@ -4,6 +4,7 @@ const $ = require("jquery")
 const journalComponent = require("./entries/journal")
 const listComponent = require("./entries/list")
 const emoteComponent = require("./entries/emote")
+const homeNavBtn = require("./homeNavBtn")
 const logoutComponent = require("./logout")
 
 //if there is an active user, show home page (list, journal, emote)
