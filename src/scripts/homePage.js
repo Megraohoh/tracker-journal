@@ -4,6 +4,7 @@ const journalComponent = require("./entries/journal")
 const listComponent = require("./entries/list")
 const emoteComponent = require("./entries/emote")
 const logoutComponent = require("./logout")
+const entriesPageComponent = require("./entriesPage")
 
 //if there is an active user, show home page (list, journal, emote)
 
@@ -14,6 +15,7 @@ const homePage = function () {
         $(".container").show()
         $("#login").hide()
         $("#register").hide()
+        $("#entriesPage").hide()
         
     } else {
         (sessionStorage.length === 0)
@@ -22,6 +24,7 @@ const homePage = function () {
         $("#list").hide()
         $("#journal").hide()
         $(".container").hide()
+        $("#entriesPage").hide()
     
     }
 }

@@ -61,6 +61,27 @@
       "entryTypeId": 2,
       "input": "Nisi ullamco voluptate Lorem magna ea deserunt. Aliquip duis aliquip irure dolore Lorem consectetur commodo do mollit excepteur qui ad nisi.",
       "timestamp": "1529544393619"
+    },
+    {
+      "userId": "1",
+      "entryTypeId": "3",
+      "input": "",
+      "timestamp": "1529533299891",
+      "id": 6
+    },
+    {
+      "userId": "1",
+      "entryTypeId": "1",
+      "input": "happy excited lazy tired",
+      "timestamp": "1529533317420",
+      "id": 7
+    },
+    {
+      "userID": "1",
+      "entryTypeId": "2",
+      "input": "there's so much going on right now",
+      "timestamp": "1529533332549",
+      "id": 8
     }
   ],
   "entryTypes": [

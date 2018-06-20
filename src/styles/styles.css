@@ -17,6 +17,16 @@ h6.card-title {
 span.card-title {
   font-variant: small-caps slashed-zero !important; 
 }
+.listSection {
+  resize: horizontal;
+  width: 200px;
+  height: 200px;
+}
+.journalSection {
+  resize: horizontal;
+  width: 200px;
+  height: 200px;
+}
   .smiley-container {
     margin-top: 50px;
   }

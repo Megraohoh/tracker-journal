@@ -25,7 +25,7 @@ const listComponent = function() {
   //get value of individual word and set first class
 $("#listText").keyup(function(e){
     if(e.keyCode === 32) {
-        $("#listText").css("background-color", "pink")
+        // $("#listText").css("background-color", "pink")
         var words = $(this).val().split(" ");
         wordDiv = document.createElement("div")
         wordDiv.value = words
