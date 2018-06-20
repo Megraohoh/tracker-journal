@@ -4,12 +4,12 @@ const entryManager = Object.create(null, {
     //get all entries
     getAllEntries: {
         value: function() {
-            return $.ajax("http://localhost:8088/entries")
+            return $.ajax("http://localhost:8088/entries?_expand=entryType")
         }
     }, 
     getAllEntriesFromSingleUser: {
         value: function(id) {
-            return $.ajax(`http://localhost:8088/entries?userId=${id}`)
+            return $.ajax(`http://localhost:8088/entries/?userId=${id}&_expand=entryType`)
         }
     },
     //get single entry

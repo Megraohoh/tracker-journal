@@ -1,41 +1,25 @@
 //Purpose: to display previous entries when nav option selected
 const $ = require("jquery")
-const userSettingsManager = require("../apiManager/settingsApiManager")
+const cardComponent = require("./createCard")
+const entryManager = require("../apiManager/entriesApiManager")
 
+const user = JSON.parse(sessionStorage.getItem("ActiveUser"))
+
+const entriesAnchor = $("#entriesPage")
 const entriesPageComponent = function () {
-    let entriesAnchor = $("#entriesPage")
     entriesAnchor.hide()
+
     $("#entries").click(function (e) {
         entriesAnchor.empty()
-        
-        const rowDiv = document.createElement("div")
-        rowDiv.setAttribute("class", "row")
-        entriesAnchor.append(rowDiv)
 
-        const colDiv = document.createElement("div")
-        colDiv.setAttribute("class", "col s12 m6")
-        rowDiv.append(colDiv)
+        let userEntries = entryManager.getAllEntriesFromSingleUser(user.id).then(entry => {
+            entry.forEach(e => {
+                const time = new Date(JSON.parse(e.timestamp))
 
-        const cardDiv = document.createElement("div")
-        cardDiv.setAttribute("class", "card blue-grey darken-1")
-        colDiv.append(cardDiv)
-
-        const cardContentDiv = document.createElement("div")
-        cardContentDiv.setAttribute("class", "card-content white-text")
-        cardDiv.append(cardContentDiv)
-
-        const cardSpan = document.createElement("span")
-        cardSpan.setAttribute("class", "card-title")
-        cardSpan.innerText = "Title"
-        cardContentDiv.append(cardSpan)
-
-        const cardParagraph = document.createElement("p")
-        cardParagraph.innerText = "Journal Entry"
-        cardContentDiv.append(cardParagraph)
-        
-        // const cardActionDiv = document.createElement("div")
-        // cardActionDiv.setAttribute("class", "card-action")
-        // cardDiv.append(cardActionDiv)
+                console.log(time)
+                cardComponent(e)
+            })
+        })
 
         entriesAnchor.show()
         $("#list").hide()

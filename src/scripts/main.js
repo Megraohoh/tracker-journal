@@ -8,7 +8,7 @@ const logoutComponent = require("./logout")
 
 
 
- console.log("puke")
+ console.log("ready")
 
 
  

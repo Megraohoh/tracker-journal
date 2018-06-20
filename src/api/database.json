@@ -21,14 +21,14 @@
   ],
   "entries": [
     {
-      "userID": "1",
+      "userId": "1",
       "entryTypeId": "2",
       "input": "this shit is real",
       "timestamp": "1529504393619",
       "id": 5
-    }
+    } 
   ],
-  "entrytype": [
+  "entryTypes": [
     {
       "id": 1,
       "type": "list"
