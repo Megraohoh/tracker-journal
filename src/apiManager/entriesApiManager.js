@@ -6,6 +6,11 @@ const entryManager = Object.create(null, {
         value: function() {
             return $.ajax("http://localhost:8088/entries")
         }
+    }, 
+    getAllEntriesFromSingleUser: {
+        value: function(id) {
+            return $.ajax(`http://localhost:8088/entries?userId=${id}`)
+        }
     },
     //get single entry
     getSingleEntry: {

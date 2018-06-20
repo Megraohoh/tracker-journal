@@ -1,6 +1,5 @@
 //Purpose: to display settings options when nav option selected
 const $ = require("jquery")
-// const userManager = require("../apiManager/userApiManager")
 const userSettingsManager = require("../apiManager/settingsApiManager")
 
 const user = JSON.parse(sessionStorage.getItem("ActiveUser"))

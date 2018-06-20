@@ -22,12 +22,12 @@
       <a href="#" class="brand-logo">HealthMe Journal</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li>
-            <button class="btn" id="home">Home</button>
-        </li>
-        <!-- <li>
-          <a href="#">Entries</a>
+          <button class="btn" id="home">Home</button>
         </li>
         <li>
+          <button class="btn" id="entries">Entries</button>
+        </li>
+        <!-- <li>
           <a href="#">Charts</a>
         </li> -->
         <li>
@@ -35,7 +35,7 @@
           <button data-target="modal1" class="btn modal-trigger" id="settings">Settings</button>
         </li>
         <li>
-            <button class="btn" id="logout">Logout</button>
+          <button class="btn" id="logout">Logout</button>
         </li>
       </ul>
     </div>
@@ -45,7 +45,8 @@
     <div class="modal-content">
       <h4>Settings</h4>
       <h5>Hide Journal Text</h5>
-      <p>Hiding text can allow you to write without editing your own story. Just write, put your thoughts in type. When you're ready to view your entry, the text will be available in the 'Entries' option in the navbar.</p>
+      <p>Hiding text can allow you to write without editing your own story. Just write, put your thoughts in type. When you're
+        ready to view your entry, the text will be available in the 'Entries' option in the navbar.</p>
     </div>
     <div class="modal-footer">
       <!-- Switch -->
@@ -63,43 +64,46 @@
   <!-- on login target div  for entries and forms-->
   <article id="login"></article>
   <article id="register"></article>
-
-  <article id="home-page"></article>
   <div id="journals-container">
-      <div class="row">
+    <div class="row">
       <div class="col s4">
-  <div class="container smiley-container">
-    <form action="#" id="smileys">
-      <div class="row">
-        <div class="col s4">
-          <label for="radio-sad">
-            <input type="radio" name="smiley" value="sad" class="sad">
-            <span></span>
-          </label>
-        </div>
-        <div class="col s4">
-          <label for="radio-neutral">
-            <input type="radio" name="smiley" value="neutral" class="neutral">
-            <span></span>
-          </label>
-        </div>
-        <div class="col s4">
-          <label for="radio-happy">
-            <input type="radio" name="smiley" value="happy" class="happy">
-            <span></span>
-          </label>
-        </div>
-        <div>It looks like you're feeling
-          <span id="result">happy</span> today..
+        <div class="container smiley-container">
+          <form action="#" id="smileys">
+            <div class="row">
+              <div class="col s4">
+                <label for="radio-sad">
+                  <input type="radio" name="smiley" value="sad" class="sad">
+                  <span></span>
+                </label>
+              </div>
+              <div class="col s4">
+                <label for="radio-neutral">
+                  <input type="radio" name="smiley" value="neutral" class="neutral">
+                  <span></span>
+                </label>
+              </div>
+              <div class="col s4">
+                <label for="radio-happy">
+                  <input type="radio" name="smiley" value="happy" class="happy">
+                  <span></span>
+                </label>
+              </div>
+              <div>It looks like you're feeling
+                <span id="result">happy</span> today..
+              </div>
+            </div>
+          </form>
         </div>
       </div>
-    </form>
-  </div></div>
-  <div class="col s4">
-  <article id="list"></article></div>
-  <div class="col s4">
-  <article id="journal"></article></div>
-</div></div>
+      <div class="col s4">
+        <article id="list"></article>
+      </div>
+      <div class="col s4">
+        <article id="journal"></article>
+      </div>
+    </div>
+  </div>
+  <article id="entriesPage"></article>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <!-- <script type="text/javascript" src="./materialize/js/materialize.min.js"></script> -->
