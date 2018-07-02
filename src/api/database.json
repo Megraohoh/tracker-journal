@@ -31,35 +31,35 @@
       "id": 1,
       "userId": 4,
       "entryTypeId": 1,
-      "input": "Ad nostrud quis pariatur deserunt ex. Ex officia id tempor duis voluptate in commodo.",
+      "input": "Frustrated Sad Angry",
       "timestamp": "1529504393889"
     },
     {
       "id": 2,
       "userId": 5,
       "entryTypeId": 2,
-      "input": "Duis qui commodo quis voluptate enim aliquip. Reprehenderit commodo ea sunt enim cillum elit excepteur velit Lorem tempor quis excepteur laborum.",
+      "input": "All I wanna do is zoom-a-zoom-zoom-zoom, just shake ya rump",
       "timestamp": "1529567393619"
     },
     {
       "id": 3,
       "userId": 1,
       "entryTypeId": 1,
-      "input": "Irure culpa cillum culpa sint culpa aute irure ad aliqua incididunt amet. Aute officia ut laboris minim exercitation voluptate consectetur ullamco magna sint cillum consequat.",
+      "input": "Giggly Slow Silly Fun",
       "timestamp": "1529504444619"
     },
     {
       "id": 4,
       "userId": 1,
       "entryTypeId": 3,
-      "input": "Officia dolor veniam velit aliquip labore excepteur nisi irure Lorem ipsum mollit excepteur enim Lorem. Nostrud dolore aute dolore exercitation voluptate.",
+      "input": "Happy",
       "timestamp": "152953393619"
     },
     {
       "id": 5,
       "userId": 1,
       "entryTypeId": 2,
-      "input": "Nisi ullamco voluptate Lorem magna ea deserunt. Aliquip duis aliquip irure dolore Lorem consectetur commodo do mollit excepteur qui ad nisi.",
+      "input": "My homeboys tried to warn me But with that butt you got makes me so horny Ooh, Rump-o'-smooth-skin You say you want to get in my Benz? Well, use me, use me 'Cause you ain't that average groupie",
       "timestamp": "1529544393619"
     },
     {
@@ -75,55 +75,6 @@
       "input": "there's so much going on right now",
       "timestamp": "1529533332549",
       "id": 8
-    },
-    {
-      "userId": "1",
-      "entryTypeId": "3",
-      "input": "",
-      "timestamp": "1529592821505",
-      "id": 9
-    },
-    {
-      "userId": "1",
-      "entryTypeId": "1",
-      "input": "sad angry bleh",
-      "timestamp": "1529599141238",
-      "id": 10
-    },
-    {
-      "userID": "1",
-      "entryTypeId": "2",
-      "input": "asdkjasdlkjdsdklfsadjkdhdnbcdnf",
-      "timestamp": "1529599163933",
-      "id": 11
-    },
-    {
-      "userId": "1",
-      "entryTypeId": "1",
-      "input": "sad angry upset",
-      "timestamp": "1530204567921",
-      "id": 12
-    },
-    {
-      "userID": "1",
-      "entryTypeId": "2",
-      "input": "feel this lksdfnasdlknnndkdhe",
-      "timestamp": "1530204605824",
-      "id": 13
-    },
-    {
-      "userId": "1",
-      "entryTypeId": "3",
-      "input": "happy",
-      "timestamp": "1530558484260",
-      "id": 14
-    },
-    {
-      "userId": "1",
-      "entryTypeId": "3",
-      "input": "neutral",
-      "timestamp": "1530559067629",
-      "id": 15
     }
   ],
   "entryTypes": [
