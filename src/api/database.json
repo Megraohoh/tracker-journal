@@ -52,7 +52,7 @@
       "id": 4,
       "userId": 1,
       "entryTypeId": 3,
-      "input": "Happy",
+      "input": "happy",
       "timestamp": "152953393619"
     },
     {
@@ -75,6 +75,34 @@
       "input": "there's so much going on right now",
       "timestamp": "1529533332549",
       "id": 8
+    },
+    {
+      "userId": "1",
+      "entryTypeId": "3",
+      "input": "neutral",
+      "timestamp": "1530560872482",
+      "id": 9
+    },
+    {
+      "userId": "1",
+      "entryTypeId": "3",
+      "input": "happy",
+      "timestamp": "1530561428700",
+      "id": 10
+    },
+    {
+      "userId": "1",
+      "entryTypeId": "3",
+      "input": "neutral",
+      "timestamp": "1530561969659",
+      "id": 11
+    },
+    {
+      "userId": "1",
+      "entryTypeId": "3",
+      "input": "sad",
+      "timestamp": "1530562068656",
+      "id": 12
     }
   ],
   "entryTypes": [

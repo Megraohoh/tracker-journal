@@ -12,8 +12,8 @@ const entriesPageComponent = function () {
     $("#entries").click(function (e) {
         entriesAnchor.empty()
 
-        let userEntries = entryManager.getAllEntriesFromSingleUser(user.id).then(entry => {
-            entry.forEach(e => {
+        let userEntries = entryManager.getAllEntriesFromSingleUser(user.id).then(allEntries => {
+            allEntries.forEach(e => {
                 const time = new Date(JSON.parse(e.timestamp))
                 cardComponent(e)
             })
