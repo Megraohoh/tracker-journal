@@ -110,6 +110,20 @@
       "input": "feel this lksdfnasdlknnndkdhe",
       "timestamp": "1530204605824",
       "id": 13
+    },
+    {
+      "userId": "1",
+      "entryTypeId": "3",
+      "input": "happy",
+      "timestamp": "1530558484260",
+      "id": 14
+    },
+    {
+      "userId": "1",
+      "entryTypeId": "3",
+      "input": "neutral",
+      "timestamp": "1530559067629",
+      "id": 15
     }
   ],
   "entryTypes": [
