@@ -32,8 +32,6 @@ $("#listText").keyup(function(e){
         wordDiv.setAttribute("class", "starter")
     }
 })
-
-
     //List save button
     const listSaveBtn = document.createElement("button")
     listSaveBtn.id = "listSaveBtn"

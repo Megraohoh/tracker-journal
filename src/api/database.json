@@ -64,13 +64,6 @@
     },
     {
       "userId": "1",
-      "entryTypeId": "3",
-      "input": "",
-      "timestamp": "1529533299891",
-      "id": 6
-    },
-    {
-      "userId": "1",
       "entryTypeId": "1",
       "input": "happy excited lazy tired",
       "timestamp": "1529533317420",
@@ -82,6 +75,41 @@
       "input": "there's so much going on right now",
       "timestamp": "1529533332549",
       "id": 8
+    },
+    {
+      "userId": "1",
+      "entryTypeId": "3",
+      "input": "",
+      "timestamp": "1529592821505",
+      "id": 9
+    },
+    {
+      "userId": "1",
+      "entryTypeId": "1",
+      "input": "sad angry bleh",
+      "timestamp": "1529599141238",
+      "id": 10
+    },
+    {
+      "userID": "1",
+      "entryTypeId": "2",
+      "input": "asdkjasdlkjdsdklfsadjkdhdnbcdnf",
+      "timestamp": "1529599163933",
+      "id": 11
+    },
+    {
+      "userId": "1",
+      "entryTypeId": "1",
+      "input": "sad angry upset",
+      "timestamp": "1530204567921",
+      "id": 12
+    },
+    {
+      "userID": "1",
+      "entryTypeId": "2",
+      "input": "feel this lksdfnasdlknnndkdhe",
+      "timestamp": "1530204605824",
+      "id": 13
     }
   ],
   "entryTypes": [
