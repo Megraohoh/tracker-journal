@@ -27,6 +27,7 @@ const cardComponent = function(e) {
     const cardParagraph = document.createElement("p")
     cardParagraph.innerText = e.input
     cardContentDiv.append(cardParagraph)
+    //image component if statement to append(src)
 
     const cardheader = document.createElement("h6")
     cardheader.setAttribute("class", "card-title")
