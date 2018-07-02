@@ -27,9 +27,10 @@ const cardComponent = function(e) {
     const cardParagraph = document.createElement("p")
     cardParagraph.innerText = e.input
     cardContentDiv.append(cardParagraph)
-
+ 
     if (e.entryType.type === "emote") {
         const cardEmoteImg = document.createElement("img")
+        cardEmoteImg.class = "face_img"
         cardEmoteImg.src = `img/${e.input}_face.png`
         //image component if statement to append(src)
         cardContentDiv.append(cardEmoteImg)

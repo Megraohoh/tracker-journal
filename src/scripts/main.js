@@ -6,7 +6,7 @@ const homeNavBtn = require("./homeNavBtn")
 const  hideJournalText = require("./settings")
 const logoutComponent = require("./logout")
 
-console.log("giggle")
+console.log("koolaid")
 
 homeNavBtn()
 entriesPageComponent()
